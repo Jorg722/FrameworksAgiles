@@ -29,11 +29,19 @@
 				transform: translate(-50%, 0%);
 				text-align: center;
 			}
-			p{
+			p, ul{
 				font-size: smaller;
 			}
 			ul, li{
 				text-align: justify;
+			}
+			.example{
+				font-size: smaller;
+				color:#1b91ff;
+				font-style: italic;
+			}
+			.important{
+				color:#1b91ff;
 			}
 		</style>
 
@@ -68,7 +76,7 @@
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							Mario est l'heureux propriétaire et gèrant du Pasta Mario, un atelier artisanal de production de pâtes italiennes.
+							Mario est l'heureux propriétaire du Pasta Mario, un atelier artisanal de production de pâtes italiennes qu'il gère avec son équipe.
 						</small>
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
@@ -78,7 +86,7 @@
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							Face à cet afflux de commandes,	Mario se posent de plus en plus de questions sur l'évolution et la gestion de son atelier.
+							Face à cet afflux de commandes,	Mario se posent de plus en plus de questions sur l'évolution de son atelier.
 						</small>
 					</p>
 				</section>
@@ -93,7 +101,7 @@
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"Comment s'assurer d'améliorer continuellement la production et la qualité de mes produits ?"
+							"Comment s'assurer d'améliorer continuellement la production et la qualité de nos produits ?"
 						</small>
 					</p>
 				</section>
@@ -108,14 +116,17 @@
 				<section>
 					<h3>Scrum - Les rôles</h3>
 					<p class="fragment fade-in-then-semi-out"><small>Il y a 3 rôles décrit par le guide SCRUM :</small></p>
-					<p><small>
+					<small>
 						<ul>
-							<li class="fragment fade-in-then-semi-out">Le Product Owner : Il est responsable de la valeur du produit fini. Dans notre exemple, Mario est le mieux placé pour jouer ce rôle.</li>
-							<li class="fragment fade-in-then-semi-out">L'équipe de production : responsable d'amener chaque incrément au statut "Fini".</li>
-							<li class="fragment fade-in-then-semi-out">Le Scrum Master : responsable et facilitateur du process Scrum.</li>
+							<li class="fragment fade-in-then-semi-out">Le Product Owner : Il est responsable de la valeur du produit fini
+								<br /><span class="example">Dans notre exemple, Mario est le mieu placé pour ce rôle car il connait parfaitement ses produits et comment satisfaire les clients</span></li>
+							<li class="fragment fade-in-then-semi-out">L'équipe de production : responsable d'amener chaque incrément au statut "Fini"
+								<br /><span class="example">Dans notre exemple, il s'agit de l'équipe du Pasta Mario</span></li>
+							<li class="fragment fade-in-then-semi-out">Le Scrum Master : facilitateur au service de l'équipe et responsable de la bonne application de Scrum
+								<br /><span class="example">Dans notre exemple, c'est un rôle à créer et qui peut éventuellement être tenu par un prestataire</span></li>
 						</ul>
-					</small></p>
-					<p class="fragment fade-in-then-semi-out"><small>Ces rôles n'ont aucun lien hiérarchique entre eux, la responsabilité du produit étant portée par l'équipe entière.</small></p>
+					</small>
+					<p class="fragment fade-in-then-semi-out"><small>Petite précision : l'équipe est auto-organisée, ce qui implique qu'il n'y ait pas de lien hiérarchique entre ces rôles, la responsabilité de l'incrément étant portée par l'équipe entière.</small></p>
 				</section>
 
 				<!-- Description Scrum - Les events -->
@@ -123,29 +134,34 @@
 					<h3>Scrum - Les événements</h3>
 					<p class="fragment fade-in-then-semi-out"><small>Le coeur de Scrum est le Sprint. Un Sprint étant une durée (1 mois max) au cours de laquelle un incrément d'un produit fonctionnel et potentiellement publiable est créé.</small></p>
 					<p class="fragment fade-in-then-semi-out"><small>4 événements ont lieu lors du Sprint : </small></p>
-					<p><small>
+					<small>
 						<ul>
-							<li class="fragment fade-in-then-semi-out">La planification : définition du contenu de l'incrément et de comment le réaliser</li>
-							<li class="fragment fade-in-then-semi-out">Les daily meetings : TODO </li>
-							<li class="fragment fade-in-then-semi-out">La revue de Sprint : TODO </li>
-							<li class="fragment fade-in-then-semi-out">La rétrospective : TODO </li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">La planification</span> : en début de sprint, définition du contenu de l'incrément et de comment le réaliser</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Les daily meetings</span> : chaque jour, inspection de l'état de l'incrément et de comment le faire avancer aujourd'hui (max 15min) </li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">La revue de Sprint</span> : à la fin du sprint, inspection et démonstration de l'incrément réalisé et si nécessaire adaptation du backlog produit</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">La rétrospective</span> : après la revue, auto-inspection de l'équipe, de ses process et outils, puis création d'un plan d'amélioration pour le prochain sprint</li>
 						</ul>
-					</small></p>
-
-
+					</small>
 				</section>
-
 
 				<!-- Description Scrum - Les artefacts -->
 				<section>
 					<h3>Scrum - Les artefacts</h3>
-					<p><small></small></p>
+					<p class="fragment fade-in-then-semi-out"><small>Les artefacts représentent soit du travail, soit de la valeur. Ils fournissent de la transparence et des opportunités d'inspection et d'adaptation</small></p>
+					<small>
+						<ul>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Le backlog produit</span> : Liste ordonnée de tous les éléments identifiés comme étant nécessaires au produit. Le Product Owner le fait évoluer en même temps que le produit</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Les backlog sprint</span> : Liste cumulative des éléments sélectionnés pour le sprint, des actions définies en rétrospective, et des tâches nécessaires pour livrer le sprint. L'équipe de production le fait évoluer lors du daily meeting</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">L'incrément</span> : Liste des éléments finis lors du sprint. L'incrément doit toujours être dans un état publiable</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">La Definition of Done (DOD)</span> : Artefact de transparence permettant d'estimer la vélocité de l'équipe et de distinguer clairement les tâches finies de celles qui ne le sont pas</li>
+						</ul>
+					</small>
 				</section>
 
-				<!-- Description Scrum - Frise !! -->
+				<!-- Description Scrum - Schéma -->
 				<section>
 					<h3>Scrum - Schéma</h3>
-					<p><small>TODO Faire un schéma pour que ça soit plus compréhensible (et qu'on puisse montrer les ajouts par la suite)</small></p>
+					<img src="./img/sprint.png" alt="Schéma du sprint selon Scrum" />
 				</section>
 
 
@@ -159,12 +175,12 @@
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"Mon équipe de production est très efficace et volontaire, peut-être même un peu trop car je sens que mon équipe s'épuise. D'ailleurs mon livreur n'arrive plus à gérer les livraisons tout seul !"
+							"Notre équipe est très efficace et volontaire, peut-être même un peu trop car je sens que l'équipe s'épuise. D'ailleurs le livreur n'arrive plus à gérer les livraisons tout seul !"
 						</small>
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"J'aimerais identifier plus facilement là où un recrutement est nécessaire tout en étant certain de pouvoir assurer les commandes sur le long terme avec l'équipe existante. Comment m'en sortir ?"
+							"Nous aimerions identifier plus facilement là où un recrutement est nécessaire tout en étant certain de pouvoir assurer les commandes sur le long terme avec l'équipe existante. Comment peut-on s'en sortir ?"
 						</small>
 					</p>
 				</section>
@@ -178,11 +194,14 @@
 				<!-- Description Scrumban -->
 				<section>
 					<h3>Scrumban</h3>
-					<p><small>TODO Description de Scrumban
+					<p><small>Le principe fondamental de Kanban est l'inversion du flux de travail : traditionnellement le travail s'effectue en flux poussé là où Kanban nécessite un flux tiré</small>
+					<p><small>En supplément de Scrum, il faut
 						- Avoir un workflow précis (start to finish)
 						- Avoir un limite sur le WIP claire et définie (la priorité étant d'agir sur ce qui block l'évolution du WIP)
 						- Avoir des métriques permettant de définir ce qu'est un blocage (4 metrics défini : durée habituelle d'un cycle, nombre de tache accompli en 1 cycle, age d'une tache, nombre de WIP actuel) + SLE (Service level expectation : par exemple 85% du sprint accompli en 8j)
 						- 
+
+						Dans l'exemple, expliquer que produire plein de pates ne sert à rien si on peut pas les livrer : il faut renforcer la livraison pour renforcer le reste et donc produire +
 
 
 
@@ -260,6 +279,13 @@
 				<section>
 					<h3>Evidence-Based</h3>
 					<p><small>TODO Description de Evidence-Based</small></p>
+				</section>
+
+
+				<!-- Description Evidence-Based -->
+				<section>
+					<h3>TODO</h3>
+					<p><small>Expliquer qu'on peut choisir que les frameworks sont compatibles entre eux pour faire par exemple du Kanban Nexus, etc..</small></p>
 				</section>
 
 
