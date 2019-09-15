@@ -32,7 +32,7 @@
 			p, ul{
 				font-size: smaller;
 			}
-			ul, li{
+			ul, li, .justify{
 				text-align: justify;
 			}
 			.example{
@@ -115,7 +115,7 @@
 				<!-- Description Scrum - Les rôles -->
 				<section>
 					<h3>Scrum - Les rôles</h3>
-					<p class="fragment fade-in-then-semi-out"><small>Il y a 3 rôles décrit par le guide SCRUM :</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Il y a 3 rôles décrit par le guide SCRUM :</small></p>
 					<small>
 						<ul>
 							<li class="fragment fade-in-then-semi-out">Le Product Owner : Il est responsable de la valeur du produit fini
@@ -126,14 +126,14 @@
 								<br /><span class="example">Dans notre exemple, c'est un rôle à créer et qui peut éventuellement être tenu par un prestataire</span></li>
 						</ul>
 					</small>
-					<p class="fragment fade-in-then-semi-out"><small>Petite précision : l'équipe est auto-organisée, ce qui implique qu'il n'y ait pas de lien hiérarchique entre ces rôles, la responsabilité de l'incrément étant portée par l'équipe entière.</small></p>
+					<p class="fragment fade-in-then-semi-out js#configuration justify"><small>Petite précision : l'équipe est auto-organisée, ce qui implique qu'il n'y ait pas de lien hiérarchique entre ces rôles, la responsabilité de l'incrément étant portée par l'équipe entière.</small></p>
 				</section>
 
 				<!-- Description Scrum - Les events -->
 				<section>
 					<h3>Scrum - Les événements</h3>
-					<p class="fragment fade-in-then-semi-out"><small>Le coeur de Scrum est le Sprint. Un Sprint étant une durée (1 mois max) au cours de laquelle un incrément d'un produit fonctionnel et potentiellement publiable est créé.</small></p>
-					<p class="fragment fade-in-then-semi-out"><small>4 événements ont lieu lors du Sprint : </small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Le coeur de Scrum est le Sprint. Un Sprint étant une durée (1 mois max) au cours de laquelle un incrément d'un produit fonctionnel et potentiellement publiable est créé.</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>4 événements ont lieu lors du Sprint : </small></p>
 					<small>
 						<ul>
 							<li class="fragment fade-in-then-semi-out"><span class="important">La planification</span> : en début de sprint, définition du contenu de l'incrément et de comment le réaliser</li>
@@ -147,7 +147,7 @@
 				<!-- Description Scrum - Les artefacts -->
 				<section>
 					<h3>Scrum - Les artefacts</h3>
-					<p class="fragment fade-in-then-semi-out"><small>Les artefacts représentent soit du travail, soit de la valeur. Ils fournissent de la transparence et des opportunités d'inspection et d'adaptation</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Les artefacts représentent soit du travail, soit de la valeur. Ils fournissent de la transparence et des opportunités d'inspection et d'adaptation</small></p>
 					<small>
 						<ul>
 							<li class="fragment fade-in-then-semi-out"><span class="important">Le backlog produit</span> : Liste ordonnée de tous les éléments identifiés comme étant nécessaires au produit. Le Product Owner le fait évoluer en même temps que le produit</li>
@@ -194,15 +194,14 @@
 				<!-- Ajout de Scrumban vs Scrum -->
 				<section>
 					<h3>Scrumban par rapport à Scrum</h3>
-					<p><small>Tous les rôles, événements et artefacts définis par Scrum sont conservés (c'est ce qui différencie Scrumban de Kanban)</small></p>
-					<p><small>Le principe fondamental de Kanban est l'inversion du flux de travail : généralement le travail s'effectue en flux poussé (le rythme est donné par l'étape qui précède) là où Kanban nécessite un flux tiré (le rythme est donné par l'étape qui suit)</small>
-					<p><small>En supplément de Scrum, il faut :</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Tous les rôles, événements et artefacts définis par Scrum sont conservés (c'est ce qui différencie Scrumban de Kanban)</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Le principe fondamental de Kanban est l'inversion du flux de travail : généralement le travail s'effectue en flux poussé (le rythme est donné par l'étape qui précède) là où Kanban nécessite un flux tiré (le rythme est donné par l'étape qui suit)</small>
+					<p class="fragment fade-in-then-semi-out justify"><small>En supplément de Scrum, il faut :</small></p>
 					<small>
 						<ul>
-							<li class="fragment fade-in-then-semi-out">Définir un workflow précis (start to finish) représentant chaque étape nécessaire à la production d'un incrément
-								<br /><span class="important">Dans l'exemple, Réunir les ingrédients --> Cuisiner --> Mettre en carton --> Charger le camion --> Livrer les clients</span></li>
+							<li class="fragment fade-in-then-semi-out">Définir un workflow précis (start to finish) représentant chaque étape nécessaire à la production d'un incrément<br /><span class="important">Par exemple, réunir les ingrédients, cuisiner, mettre en carton, livrer les clients</span></li>
 							<li class="fragment fade-in-then-semi-out">Définir une limite du Work In Progress (WIP) sur chaque étape du workflow afin d'identifier facilement ce qui bloque l'évolution du WIP
-									<br /><span class="important">Dans l'exemple,les cuisiniers produisent 3 fois plus que ce qui peut être livré. Il serait plus rentable de se limiter à produire uniquement ce qui peut être livré afin d'éviter le gâchis. De plus, cela dégagera du temps à une partie de l'équipe pour solutionner ce problème de livraison : peut-être qu'un plus gros camion pourrait faire l'affaire ? Ou que les cuisiniers pourraient se charger de la mise en carton ?</span></li>
+									<br /><span class="important">Dans l'exemple,il serait plus rentable de limiter la production à ce qui peut être livré pour éviter le gâchis. La mise en carton peut Les cuisiniers pourraient peut-être se charger de la mise en carton ?</span></li>
 							<li class="fragment fade-in-then-semi-out">Définir des métriques permettant d'identifier ce qu'est un blocage : durée habituelle d'un cycle, nombre de tâches accomplies en un cycle, âge de chaque tâche, nombre de WIP actuel, Service Level Expectation (SLE) par exemple par exemple 85% du sprint accompli en 8j</li>
 						</ul>
 					</small>
@@ -211,7 +210,7 @@
 				<!-- Management quotidien de Scrumban -->
 				<section>
 					<h3>Utiliser Scrumban</h3>
-					<p><small>La gestion de Scrumban nécessites plusieurs actions ou attentions au quotidien, incluant au moins de :</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>La gestion de Scrumban nécessites plusieurs actions ou attentions au quotidien, incluant au moins de :</small></p>
 					<small>
 						<ul>
 							<li class="fragment fade-in-then-semi-out">Répondre rapidement à ce qui bloque les tâches (ça doit être la priorité de l'équipe)</li>
@@ -220,7 +219,7 @@
 							<li class="fragment fade-in-then-semi-out">Eviter d'accumuler des tâches dans une étape si cela n'est pas strictement nécessaire</li>
 						</ul>
 					</small>
-					<p><small>Toutes ces actions/attentions permettent d'assurer une continuité de production</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Toutes ces actions/attentions permettent d'assurer une continuité de production</small></p>
 
 				</section>
 
@@ -243,17 +242,17 @@
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"Depuis la mise en place de ScrumBan, tout roule pour le mieux et j'ai même eu une nouvelle idée révolutionnaire : proposer des pâtes à la bolognaise !"
+							"Depuis la mise en place de ScrumBan, tout roule pour le mieux et nous avons même eu une nouvelle idée révolutionnaire : proposer des pâtes à la bolognaise !"
 						</small>
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"J'ai déjà mon équipe spécialisée pour la production des pâtes prête à attaquer sur ce nouveau produit, et j'ai recruté suffisament pour monter une équipe qui s'occupera des légumes et une autre équipe pour la préparation de la viande"
+							"Notre équipe spécialisée pour la production des pâtes est prête à attaquer ce nouveau produit, et nous avons recruté suffisament pour monter une équipe qui s'occupera des légumes et une autre équipe pour la préparation de la viande"
 						</small>
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"Toutes ces équipes sont très efficaces dans leur domaine respectif, mais personne ne sait faire des pâtes à la bolognaise. Comment faire pour être sûr qu'à la fin, je n'obtiendrai pas juste des pâtes aux légumes et à la viande mais bel et bien des pâtes à la bolognaise ?"
+							"Toutes ces équipes sont très efficaces dans leur domaine respectif, mais personne ne sait faire des pâtes à la bolognaise. Comment faire pour être sûr qu'à la fin, nous n'obtiendrons pas juste des pâtes aux légumes et à la viande mais bel et bien des pâtes à la bolognaise ?"
 						</small>
 					</p>
 				</section>
@@ -266,8 +265,20 @@
 
 				<!-- Description Nexus -->
 				<section>
-					<h3>Nexus</h3>
-					<p><small>TODO Description de Nexus</small></p>
+					<h3>Nexus - Organisation</h3>
+					<p class="fragment fade-in-then-semi-out justify"><small>Nexus permet la coordination de plusieurs équipes SCRUM travaillant sur un produit commun</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Une équipe Nexus est créée en supplément des équipes SCRUM afin de gérer la coordination du projet et de réduire les dépendances entre les équipes.</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Cette équipe a son propre Scrum master, son propre product owner, et sa propre équipe de production composée de "référents experts" de chaque équipe SCRUM (leur rôle dans Nexus est prioritaire par rapport à leur rôle dans leur équipe Scrum)</small></p>
+				</section>
+
+				<!-- Description Nexus -->
+				<section>
+					<h3>Nexus par rapport à Scrum</h3>
+					<p class="fragment fade-in-then-semi-out justify"><small>Dans Nexus, il n'y a plus qu'un seul backlog produit qui appartient à l'équipe Nexus</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Les Daily Scrum Nexus permettent de s'assurer que le travail est régulièrement intégré, d'identifier les nouvelles dépendances ou impacts sur les équipes et d'identifier les informations à partager entre les équipes.</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Un événement supplémentaire, le "Cross-Team Refinement" (ou "Raffinement"), fait avant la planification, permet de minimiser au maximum les dépendances entre les équipes, et d'identifier à quelle équipe devrait être affectée chaque tâche du backlog</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>La rétrospective Nexus se passe en 3 temps : identifier les problèmes qui ont eu un impact sur plus d'une seule équipe, tenue des rétrospectives de chaque équipe (pendant lesquelle les problèmes communs sont également discutés), puis détermination et communication des actions retenues parmis celles remontées par chaque équipe (notion d'intelligence collective)</small></p>
+
 				</section>
 
 				<!-- Nexus - Schéma-->
@@ -289,7 +300,7 @@
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
 						<small>
-							"Les pâtes à la bolognaise sont un succès. D'ailleurs un investisseur m'a contacté pour me permettre d'ouvrir des franchises dans d'autres pays !"
+							"Les pâtes à la bolognaise sont un succès. D'ailleurs un investisseur nous a contacté pour nous permettre d'ouvrir des franchises dans d'autres pays !"
 						</small>
 					</p>
 					<p class="fragment fade-in-then-semi-out" style="float: right; width: 75%;">
@@ -312,8 +323,46 @@
 
 				<!-- Description Evidence-Based -->
 				<section>
-					<h3>Evidence-Based</h3>
-					<p><small>TODO Description de Evidence-Based</small></p>
+					<h3>Evidence-Based - Le principe</h3>
+					<p class="fragment fade-in-then-semi-out justify"><small>Evidence-Based permet avant tout d'accompagner le changement.</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Comme son nom l'indique, le principe de ce framework est de se baser sur les preuves. Plutôt que d'accepter un changement parce que quelqu'un le décide, ce framework/add-ons permet d'apporter les preuves que le changement a des effets bénéfiques</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Ce framework est à la fois un ajout à Scrum et un framework à part entière : il pourra par exemple être utilisé afin d'accompagner la mise en place de Scrum</small></p>
+				</section>
+
+				<section>
+					<h3>Evidence-Based - Organisation</h3>
+					<p class="fragment fade-in-then-semi-out justify"><small>Tout comme Nexus, Evidence-Based nécessite une équipe dédiée. Chaque membre de cette équipe a le même "titre", peu importe son rôle dans l'entreprise (il n'y a pas d'exception, même pour le DRH ou le PDG)</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Si nécessaire, Evidence-Based peut être organisé en plusieurs équipes traitant chacun un niveau du changement (entreprise, domaine, équipe) mais en aucun cas ces équipes ne doivent être organisée par métier (un changement sur un métier affectant presque systématiquement d'autres métiers : par exemple, si les développeurs changent d'approche de développement, les offres d'emploi et les campagnes marketing auprès des clients finaux devront très probablement également être mises à jour)</small></p>
+				</section>
+
+				<section>
+					<h3>Evidence-Based par rapport à Scrum</h3>
+					<p class="fragment fade-in-then-semi-out justify"><small>Un événement supplémentaire,<span class="important">l'évaluation</span>, se tenant avant la revue, permet d'identifier et de mettre à jour les indicateurs nécessaires à l'apport de preuve du bénéfice du changement oppéré</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Les artefacts d'Evidence-Based sont les suivants : </small></p>
+					<small>
+						<ul>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Le Practice Backlog</span> : contenant chaque pratique que l'on souhaite mettre en place</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Le Sprint Backlog</span> : contenant les pratiques que l'on souhaite mettre en place lors de cette itération</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">L'Evaluation Backlog</span> : contenant chaque pratique qui nécessite d'être évaluée ou renforcée</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">L'Increment of Change</span> : contenant les pratiques qui ont permis un changement effectif à la fin du sprint</li>
+						</ul>
+					</small>
+				</section>
+
+				<section>
+					<h3>Evidence-Based - Les preuves</h3>
+					<p class="fragment fade-in-then-semi-out justify"><small>Les preuves sont organisées en 4 catégories : </small></p>
+					<small>
+						<ul>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Unrealized Value (UV)</span> : Valeur potentiellement réalisable si l'organisation pouvait répondre à toutes les attentes des clients. Exemple d'indicateurs : part de marché, écart entre la satisfaction attendue et la satisfaction réelle des utilisateurs, ...</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Current Value (CV)</span> : valeur du produit actuel. Exemple d'indicateurs : satisfaction des clients, des employés, ratio coût/bénéfice des produits, ...</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Ability to Innovate (A2I)</span> : Capacité de répondre aux besoins des clients. Exemple d'indicateurs : dette technique, nombre de fonctionnalités utilisés, ...</li>
+							<li class="fragment fade-in-then-semi-out"><span class="important">Time to Market (T2M)</span> : Délai de délivrance d'un nouveau produit. Exemple d'indicateurs : fréquence de livraison, délai de correction, ...</li>
+							<li class="fragment fade-in-then-semi-out">En supplément, on pourra évaluer <span class="important">l'Agility Index</span>, qui est un indicateur unique représentant ces 4 catégories et <span class="important">l'Agility Acceleration</span>, représentant la vitesse à laquelle une organisation peut opérer un changement. Plus l'Agility Acceleration est faible, plus le coût de la mise en place d'un changement sera grand</li>
+						</ul>
+					</small>
+					<p class="fragment fade-in-then-semi-out"><small>Une liste plus complète des indicateurs est disponibles en annexe du guide officiel</small></p>
+
 				</section>
 				
 				<!-- Evidence-Based - Schéma-->
@@ -329,7 +378,8 @@
 				<!-- Infos supplémentaires -->
 				<section>
 					<h3>Infos supplémentaires</h3>
-					<p><small>Les différents Add-ons sont compatibles entre eux, par exemple, rien n'empêche d'organiser des équipes Scrumban en Nexus avec de l'Evidence-Based</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Les différents Add-ons sont compatibles entre eux, par exemple, rien n'empêche d'organiser des équipes Scrumban en Nexus avec de l'Evidence-Based pour apporter la preuve de l'efficacité de "ce combo"</small></p>
+					<p class="fragment fade-in-then-semi-out justify"><small>Chaque organisation a ses spécificités, Scrum et ses add-ons ne sont peut-être pas les plus adaptées.<br /> Les premières étapes de la mise en place d'un framework Agile sont donc de faire un état des lieux de l'existant et de définir les besoins de l'organisation pour s'assurer de proposer ou d'adopter le framework le mieux adapté à la situation.</small></p>
 				</section>
 
 
@@ -341,8 +391,10 @@
 						<small> </p>
 							<ul>
 								<li class="fragment fade-in-then-semi-out">Les guides officiels sont disponibles gratuitement sur <a href="https://www.scrum.org/resources?type=90" alt="Liens vers les guides">scrum.org</a></li>
+								<li class="fragment fade-in-then-semi-out">Pour Evidence-Based, il y a 2 documents, dont un qui décrit de façon plus complète les indicateurs et leurs utilisations.</li>
 								<li class="fragment fade-in-then-semi-out">Il existe beaucoup d'autres frameworks agiles mono équipe : <br />XP, Crystal Clear, Adaptive Software Development (ASD), etc...</li>
 								<li class="fragment fade-in-then-semi-out">Et également pour le multi-équipes :<br />Spotify, Safe, Disciplined Agile, LeSS, Scrum@Scale, etc...</li>
+								<li class="fragment fade-in-then-semi-out">Si vous les souhaitez, la certification "Scrum Fundamentals Certified" peut être passée gratuitement en ligne via ScrumStudy</li>
 							</ul>
 						</small>
 					</p>
